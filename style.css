@@ -1,120 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-  background: #222;
+    margin: 0;
+    padding: 18px;
+    display: flex;
+    line-height: 1.3;
+    background-color: black;
+    justify-content: center;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
 }
 
-.game-card {
-  position: relative;
-  width: 1120px;
-  height: 1680px;
-  background: #b2e0e6;
-  border: 8px solid #222;
-  margin: 40px auto;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding: 32px 32px 16px 32px;
+.card {
+    padding: 18px;
+    max-width: 432px;
+    border-radius: 9px;
+    background-color: #C5E7CD;
+    box-shadow: inset 0px 0px 9px rgba(40, 70, 30, 1);
 }
 
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-family: 'Georgia', serif;
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 12px;
-  text-shadow: 2px 2px 4px #000;
+.card img {
+    width: 100%;
+    margin: 9px 0;
+    border-radius: 9px;
+    box-shadow: 0 4px 10px rgba(40, 70, 30, 1);
 }
 
-.card-name {
-  flex: 1;
-  letter-spacing: 2px;
+span {
+    color: black;
+    padding: 0 3px;
+    border-radius: 3px;
+    display: block;
 }
 
-.mana-cost {
-  display: flex;
-  gap: 6px;
-}
-.mana-icon {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
+span:nth-child(4n-3) {
+    background-color: #FDBBD6;
 }
 
-.artwork {
-  width: 100%;
-  height: 520px;
-  background: #222;
-  border: 4px solid #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.artwork-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+span:nth-child(4n-2) {
+    background-color: #FEDC99;
 }
 
-.card-type-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Georgia', serif;
-  font-size: 2rem;
-  color: #fff;
-  margin: 18px 0 8px 0;
-  text-shadow: 1px 1px 2px #000;
-}
-.card-type {
-  font-weight: bold;
-}
-.set-icon-img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
+span:nth-child(4n-1) {
+    background-color: #FDF691;
 }
 
-.rules-box {
-  background: #e6f6ffcc;
-  border: 2px solid #b2e0e6;
-  border-radius: 8px;
-  padding: 32px 28px;
-  font-family: 'Georgia', serif;
-  font-size: 2.1rem;
-  color: #222;
-  min-height: 340px;
-  margin-bottom: 18px;
-  box-shadow: 0 2px 8px #0002;
+span:nth-child(4n) {
+    background-color: #A9DDF3;
+    /* margin-bottom: 18px; */
 }
-
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Georgia', serif;
-  font-size: 1.3rem;
-  color: #222;
-  margin-top: auto;
-  padding-top: 10px;
-  border-top: 1px solid #b2e0e6;
-}
-
-#downloadBtn, #downloadPdfBtn {
-  display: block;
-  margin: 30px auto 0 auto;
-  padding: 16px 32px;
-  font-size: 1.2rem;
-  background: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-#downloadBtn:hover, #downloadPdfBtn:hover {
-  background: #388e3c;
-} 
